@@ -2,3 +2,7 @@ VIM 配置记录
 
 ===================
 7/29/213 <F9>设置粘贴模式(解决粘贴缩进问题) 参考: [http://www.doyj.com/2013/02/28/vim粘贴时的自动缩进问题/](http://www.doyj.com/2013/02/28/vim粘贴时的自动缩进问题/)
+
+
+====================
+11/10/2013 修改默认 tab为8space ->  tab为4spaces 参考: [http://hi.baidu.com/yhfaith/item/ce5c673bb16b20322f0f8120](http://hi.baidu.com/yhfaith/item/ce5c673bb16b20322f0f8120)
