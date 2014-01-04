@@ -45,15 +45,67 @@ Bundle 'scrooloose/nerdtree.git'
 Bundle 'mattn/emmet-vim.git'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
+"vim 多行註釋
+Bundle 'tpope/vim-commentary'
+"縮進對齊線
+Bundle 'Yggdroot/indentLine'
 
 
 
 set tags=./tags,tags
 set autochdir
-map <F8> :Tlist<cr>
+
+"打開文件夾"
+map <F7> :Tlist<cr>
 
 "paste modle"
 set pastetoggle=<F9>
 
 "zencode key"
 let g:user_zen_expandabbr_key = '<Tab>'
+
+
+"瀏覽器預覽"
+map <F8> :!/opt/google/chrome/chrome %<cr>
+
+
+"缩进对齐线"
+map <F6> :IndentLinesToggle<CR>
+
+
+"Python 注释
+function InsertPythonComment()
+    exe 'normal'.1.'G'
+    let line = getline('.')
+    if line =~ '^#!.*$' || line =~ '^#.*coding:.*$'
+        return
+    endif
+    normal O
+    call setline('.', '#!/usr/bin/env python')
+    normal o
+    call setline('.', '# -*- coding:utf-8 -*-')
+    normal o
+    call setline('.', '#')
+    normal o
+    call setline('.', '#   Author  :   '.g:python_author)
+    normal o
+    call setline('.', '#   E-mail  :   '.g:python_email)
+    normal o
+    call setline('.', '#   Date    :   '.strftime("%y/%m/%d %H:%M:%S"))
+    normal o
+    call setline('.', '#   Desc    :   ')
+    normal o
+    call setline('.', '#')
+    normal o
+    call cursor(7, 17)
+endfunction
+function InsertCommentWhenOpen()
+    if a:lastline == 1 && !getline('.')
+        call InsertPythonComment()
+    end
+endfunc
+au FileType python :%call InsertCommentWhenOpen()
+au FileType python map <F3> :call InsertPythonComment()<cr>
+
+let g:python_author = 'Rhapsodyzs' 
+let g:python_email = 'zs1213yh@gmail.com'

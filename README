@@ -10,3 +10,8 @@ VIM 配置记录
 ======================
 
 12/29/2013 添加zen-coding and js-beautify  for html
+
+
+=======================
+1/4/2014 添加 `Python 注释`插件,  `vim-commentary`(many lines comments), `indentLine`(缩进对齐线) 
+
