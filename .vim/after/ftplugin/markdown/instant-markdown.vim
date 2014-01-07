@@ -19,12 +19,12 @@ endfu
 
 function! s:refreshView()
     let bufnr = expand('<bufnr>')
-    call s:system("curl -X PUT -T - http://localhost:8090/ &>/home/zh/dd.log &",
+    call s:system("curl -X PUT -T - http://localhost:8090/ &>/dev/null &",
                 \ s:bufGetContents(bufnr))
 endfu
 
 function! s:startDaemon(initialMD)
-    call s:system("instant-markdown-d &>/home/zh/aa.log &", a:initialMD)
+    call s:system("instant-markdown-d &>/dev/null &", a:initialMD)
 endfu
 
 function! s:initDict()
