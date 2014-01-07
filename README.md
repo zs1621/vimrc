@@ -15,3 +15,6 @@ VIM 配置记录
 =======================
 1/4/2014 添加 `Python 注释`插件,  `vim-commentary`(many lines comments), `indentLine`(缩进对齐线) 
 
+==========================
+1/7/2014 添加`.vim`文件夹的所有内容(添加 vim-instant-markdown 插件, vim 预览作用)
+

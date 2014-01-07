@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/zh/wishtree/wishpool_node/modules'
+let g:netrw_dirhist_2='/home/zh/wishtree/wishpool_node/node_modules/kue/lib/http/routes'
+let g:netrw_dirhist_3='/home/zh/wishtree/wishpool_node/job'
+let g:netrw_dirhist_4='/home/zh/wishtree/wishpool_node/models'
+let g:netrw_dirhist_5='/home/zh/wishtree/wishpool_node/test/controllers'
