@@ -11,8 +11,6 @@ set hidden "in order to switch between buffers with unsaved change
 map <s-tab> :bp<cr>
 "map <tab> :bn<cr>
 map <F2> :NERDTreeToggle <cr>
-map <F12> :!python %
-map <F10> :!node %
 set number
 set ai
 set bs=2
@@ -45,6 +43,7 @@ Bundle 'scrooloose/nerdtree.git'
 Bundle 'mattn/emmet-vim.git'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
+Bundle 'tpope/vim-markdown'
 "vim 多行註釋
 Bundle 'tpope/vim-commentary'
 "縮進對齊線
@@ -109,3 +108,8 @@ au FileType python map <F3> :call InsertPythonComment()<cr>
 
 let g:python_author = 'Rhapsodyzs' 
 let g:python_email = 'zs1213yh@gmail.com'
+
+" SignleCompile   vim plugin
+nmap <F9> :SCCompile<cr>
+nmap <F12> :SCCompileRun<cr>
+

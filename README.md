@@ -18,3 +18,5 @@ VIM 配置记录
 ==========================
 1/7/2014 添加`.vim`文件夹的所有内容(添加 vim-instant-markdown 插件, vim 预览作用)
 
+==========================
+3/7/2014 添加 [`SingleCompile`](http://www.topbug.net/SingleCompile/) 插件
