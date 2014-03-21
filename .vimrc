@@ -43,7 +43,8 @@ Bundle 'scrooloose/nerdtree.git'
 Bundle 'mattn/emmet-vim.git'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
-Bundle 'tpope/vim-markdown'
+Bundle 'TaskList.vim'
+Bundle 'pythoncomplete'
 "vim 多行註釋
 Bundle 'tpope/vim-commentary'
 "縮進對齊線
@@ -113,3 +114,5 @@ let g:python_email = 'zs1213yh@gmail.com'
 nmap <F9> :SCCompile<cr>
 nmap <F12> :SCCompileRun<cr>
 
+let g:instant_markdown_autostart = 1 
+let g:instant_markdown_slow = 0 
