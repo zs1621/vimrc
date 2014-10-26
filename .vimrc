@@ -32,23 +32,26 @@ let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle"
 " required!
-Bundle 'gmarik/vundle'
-Bundle 'jonathanfilip/vim-lucius.git'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'mattn/emmet-vim.git'
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'einars/js-beautify'
-Bundle 'TaskList.vim'
-Bundle 'pythoncomplete'
+Plugin 'gmarik/vundle.vim'
+Plugin 'jonathanfilip/vim-lucius.git'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'mattn/emmet-vim.git'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
+Plugin 'TaskList.vim'
+Plugin 'pythoncomplete'
 "vim 多行註釋
-Bundle 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 "縮進對齊線
-Bundle 'Yggdroot/indentLine'
+Plugin 'Yggdroot/indentLine'
+
+call vundle#end()
+filetype plugin indent on
 
 
 
